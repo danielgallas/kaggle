@@ -4,7 +4,7 @@ title: "My Draft Post"
 date: 2025-02-09
 categories: [blog]
 published: true
-raw: |
+raw:
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/kaTeX/0.15.0/katex.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/kaTeX/0.15.0/katex.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/kaTeX/0.15.0/contrib/auto-render.min.js"></script>
