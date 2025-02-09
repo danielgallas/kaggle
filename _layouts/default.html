@@ -4,9 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
+  
+  <!-- Include the Minima theme's default styles -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+  <!-- KaTeX CSS for rendering LaTeX -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css">
+
+  <!-- KaTeX JS for rendering -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/contrib/auto-render.min.js"></script>
+
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
       renderMathInElement(document.body, {
@@ -18,20 +26,26 @@
     });
   </script>
 
-  <!-- Include the default Minima styles and any custom styles here -->
+  <!-- Other head content -->
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <h2>{{ page.title }}</h2>
+  <header class="site-header">
+    <div class="wrapper">
+      <h1>{{ site.title }}</h1>
+      <h2>{{ page.title }}</h2>
+    </div>
   </header>
 
-  <main>
-    {{ content }}
+  <main role="main" class="main-content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
   </main>
 
-  <footer>
-    <p>Copyright © {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
