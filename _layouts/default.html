@@ -1,11 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  
   <!-- KaTeX CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css">
 
   <!-- KaTeX JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/contrib/auto-render.min.js"></script>
-
+  
   <!-- KaTeX Auto-Render Script -->
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
@@ -17,4 +22,20 @@
       });
     });
   </script>
+
+  <!-- Add your additional stylesheets or scripts here -->
 </head>
+<body>
+  <header>
+    <!-- Your header content here -->
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <!-- Your footer content here -->
+  </footer>
+</body>
+</html>
