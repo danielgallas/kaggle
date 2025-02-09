@@ -44,3 +44,31 @@ Where:
 
 This metric is particularly useful for tasks involving ordinal data such as grading or scoring scales.
 
+
+---
+layout: post
+title: "Understanding the Quadratic Formula"
+date: 2025-02-09
+---
+
+### Introduction to the Quadratic Formula
+
+The quadratic formula is a famous equation that helps solve any quadratic equation of the form:
+
+$$
+ax^2 + bx + c = 0
+$$
+
+The solution for \( x \) is given by the quadratic formula:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+This formula allows us to find the roots of the quadratic equation.
+
+#### Example Usage
+
+For the equation \( 2x^2 - 4x - 6 = 0 \), we can substitute the values of \( a \), \( b \), and \( c \) into the formula.
+
+
