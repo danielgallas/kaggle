@@ -1,4 +1,10 @@
 theme: minima
-markdown: kramdown
-kramdown:
-    math_engine: katex
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      head:
+        - '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/kaTeX/0.15.0/katex.min.css">'
+        - '<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/kaTeX/0.15.0/katex.min.js"></script>'
+        - '<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/kaTeX/0.15.0/contrib/auto-render.min.js"></script>'
