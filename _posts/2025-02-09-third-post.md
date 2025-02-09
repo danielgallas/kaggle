@@ -44,13 +44,6 @@ Where:
 
 This metric is particularly useful for tasks involving ordinal data such as grading or scoring scales.
 
-
----
-layout: post
-title: "Understanding the Quadratic Formula"
-date: 2025-02-09
----
-
 ### Introduction to the Quadratic Formula
 
 The quadratic formula is a famous equation that helps solve any quadratic equation of the form:
