@@ -7,4 +7,6 @@ categories: [blog]
 
 So here we are. My second blog post.
 
+First equation is here \\(\mathbf{I}\_n\\). The next equation is here \\(D\_j\\). More text.
+
 This is an inline math formula: $a^2 + b^2 = c^2$.
