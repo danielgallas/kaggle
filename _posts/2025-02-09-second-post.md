@@ -6,3 +6,5 @@ categories: [blog]
 ---
 
 So here we are. My second blog post.
+
+This is an inline math formula: $a^2 + b^2 = c^2$.
