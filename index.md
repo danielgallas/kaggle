@@ -8,6 +8,39 @@ $ E = mc^2 $
 
 The formula for energy is \( E = mc^2 \).
 
+\[
+E = mc^2
+\]
+
+
+\begin{equation}
+E = mc^2
+\end{equation}
+
+\[
+\begin{gather}
+E = mc^2 \\
+F = ma
+\end{gather}
+\]
+
+\[
+\begin{multline}
+E = mc^2 \\
+F = ma
+\end{multline}
+\]
+
+
+\[
+\begin{array}{ccc}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 \\
+\end{array}
+\]
+
+
 $$
 \begin{aligned}
 E &= mc^2 \\
