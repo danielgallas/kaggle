@@ -4,7 +4,7 @@ title: Welcome to my blog
 
 First words out!
 
-$$ E = mc^2 $$
+$ E = mc^2 $
 
 The formula for energy is \( E = mc^2 \).
 
