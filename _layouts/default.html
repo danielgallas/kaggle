@@ -1,0 +1,58 @@
+---
+# Layout for pages using the default layout
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.language | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  <meta name="description" content="{{ page.excerpt | default: site.description }}">
+  
+  {% seo %}
+  {% if site.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+  {% endif %}
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="site-header">
+        <h1 class="site-title">
+          <a href="{{ site.baseurl | absolute_url }}" rel="home">{{ site.title }}</a>
+        </h1>
+        <p class="site-description">{{ site.description }}</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <main role="main">
+      {% if page.title %}
+        <h1 class="page-title">{{ page.title }}</h1>
+      {% endif %}
+
+      <div class="page-content">
+        {{ content }}
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
