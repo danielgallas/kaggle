@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "My Draft Post"
 date: 2025-02-09
 categories: [blog]
