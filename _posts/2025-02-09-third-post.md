@@ -6,4 +6,7 @@ categories: [blog]
 published: false
 ---
 
-This post is currently a draft and won’t be published.
+The competition [I will look at is Child Mind Institute — Problematic Internet Use]https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use.
+
+The first place solution is by [Lennart Haupts]https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/leaderboard
+
