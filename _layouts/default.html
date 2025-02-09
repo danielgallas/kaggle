@@ -4,38 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
-  
-  <!-- KaTeX CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css">
-
-  <!-- KaTeX JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.js"></script>
-  
-  <!-- KaTeX Auto-Render Script -->
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body, {
-        delimiters: [
-          {left: "$$", right: "$$", display: true},  // Block math
-          {left: "$", right: "$", display: false}    // Inline math
-        ]
-      });
-    });
-  </script>
-
-  <!-- Add your additional stylesheets or scripts here -->
 </head>
 <body>
   <header>
-    <!-- Your header content here -->
+    <h1>Test Page</h1>
   </header>
 
   <main>
-    {{ content }}
+    <p>This is a test page to check if KaTeX is working.</p>
+    <p>Inline math: $E = mc^2$</p>
+    <p>Block math:</p>
+    <p>$$ \int_{0}^{\infty} e^{-x^2} dx $$</p>
   </main>
 
   <footer>
-    <!-- Your footer content here -->
+    <p>Footer content goes here</p>
   </footer>
 </body>
 </html>
