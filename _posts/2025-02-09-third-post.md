@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: post
 title: "My Draft Post"
 date: 2025-02-09
 categories: [blog]
 published: true
 ---
+
 
 The competition [I will look at is Child Mind Institute — Problematic Internet Use](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use).
 
