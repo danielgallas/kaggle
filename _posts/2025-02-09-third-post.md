@@ -17,3 +17,9 @@ The submission file will be a table with two columns: user ID and his or her sii
 
 The evaluation method is: [quadratic weighted kappa](https://www.kaggle.com/code/aroraaman/quadratic-kappa-metric-explained-in-5-simple-steps), which measures the agreement between two ratings. This metric typically varies from 0 (random agreement between raters) to 1 (complete agreement between raters).
 
+# Step by step solution
+
+The first issue is getting all the data together. There are two sets of data. One regular set of train.csv and test.csv files. But there is a bunch of .parquet files, which is time series from a wearable device each user wore for a while. We can already see that we will have a problem of too much data - and probably too much noise.
+
+Parquet files contain data from 996 unique users. Instead of using the title of each feature (enmo, anglez, non-wear_flag,...), the author of the notebook replaced all titles by general column titles (stat 1, stat 2", etc.)
+
