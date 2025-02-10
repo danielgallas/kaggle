@@ -23,3 +23,15 @@ The first issue is getting all the data together. There are two sets of data. On
 
 Parquet files contain data from 996 unique users. Instead of using the title of each feature (enmo, anglez, non-wear_flag,...), the author of the notebook replaced all titles by general column titles (stat 1, stat 2", etc.)
 
+The train dafaframe has 3960 rows and 82 columns.
+The train_ts (from parquet files) has 996 rows and 74 columns (id column is dropped).
+
+Standard scaler is used to standardise numbers in train_ts.
+All missing values are filled with the mean.
+
+Principal Component Analysis is used to reduce all 74 features to just 15 (now called PC_1, PC_2. etc.)
+
+IDs are reintroduced into the dataframe. And then all dataframes are merged by ID. This produces one big dataframe with 3960 rows and 97 columns.
+
+It then removes many outliers with the clean_features function it created. The author explains in his write-up: Implausible values, such as body fat percentages over 60% or negative bone mineral content, were removed and replaced with NaN.
+
