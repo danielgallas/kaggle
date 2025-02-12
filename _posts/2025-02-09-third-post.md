@@ -47,5 +47,9 @@ A LassoCV method is used to impute values to nAn cells. The method aims to imput
 
 This approach is similar to multivariate feature imputation techniques, such as those implemented in scikit-learn’s IterativeImputer, which models each feature with missing values as a function of other features and uses that estimate for imputation.
 
+## The model
+
+Now for the model.
+
 
 
