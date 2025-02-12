@@ -35,3 +35,17 @@ IDs are reintroduced into the dataframe. And then all dataframes are merged by I
 
 It then removes many outliers with the clean_features function it created. The author explains in his write-up: Implausible values, such as body fat percentages over 60% or negative bone mineral content, were removed and replaced with NaN.
 
+Some nummerical values are changed to categorical. For 15 hand-picked columns, values are classified in 10 bins. Each bin has about 200 rows in it. The author write: "Quantile binning was applied to a good chunk of the features to deal with the noise. Which worked surprisingly well.”
+
+Next up a bit of cleaning: rows without the target variable sii are removed. All columns that are not present in the test set are stored in “features”.
+y_model is the model target PCIAT-PCIAT_Total
+y_comp is the competition target sir
+
+A distribution graph of the target variable revealed there are too many zeroes.
+
+A LassoCV method is used to impute values to nAn cells. The method aims to impute missing values in a dataset by training a predictive model for each feature with missing data, using other available features as predictors. If insufficient data is available to train a reliable model, it falls back on using the mean value for imputation.
+
+This approach is similar to multivariate feature imputation techniques, such as those implemented in scikit-learn’s IterativeImputer, which models each feature with missing values as a function of other features and uses that estimate for imputation.
+
+
+
