@@ -51,7 +51,19 @@ The author writes: Feature selection was done manually based on feature importan
 
 ## The model
 
-Now for the model.
+One interesting question to answer is: what is the right threshold for Parent-Child Internet Addiction Test (PCIAT-PCIAT_Total)?
+
+This is the target variable of the model. The thresholds are 30, 50 and 80 and they correspond to this Severity Impairment Index: 0-30=None; 31-49=Mild; 50-79=Moderate; 80-100=Severe.
+
+The author questions whether, in machine learning, he should use different thresholds. To do this, he builds a threshold optimizer, which is code he copied from [Michael Semenoff](https://www.kaggle.com/code/michaelsemenoff/cmi-actigraphy-feature-engineering-selection).
+
+Three models are used to train the data: LightGBM, XBoost and CatBoost. Optuna is used to tune hyperparameters, with 30 trials. Accuracy and F1 score are used as goals for the hyperparameter tuning.
+
+Cross-validation is performed with each model and the out-of-fold predictions and Cohen's Kappa score are computed for each fold. This returns a float (Mean Kappa score across all folds) and an array of out-of-fold score predictions for the entire dataset.
+
+The models are ensembled with mean. This is interesting, because obviously one of the models will perform better than others using just one set of data. But it does not mean it will perform better in all sets of data. This is the problem of overfitting. The author writes: "Leaderboard score itself was mostly ignored to minimize overfitting to the leaderboard."
+
+
 
 
 
