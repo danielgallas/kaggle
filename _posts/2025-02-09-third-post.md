@@ -61,7 +61,11 @@ Three models are used to train the data: LightGBM, XBoost and CatBoost. Optuna i
 
 Cross-validation is performed with each model and the out-of-fold predictions and Cohen's Kappa score are computed for each fold. This returns a float (Mean Kappa score across all folds) and an array of out-of-fold score predictions for the entire dataset.
 
-The models are ensembled with mean. This is interesting, because obviously one of the models will perform better than others using just one set of data. But it does not mean it will perform better in all sets of data. This is the problem of overfitting. The author writes: "Leaderboard score itself was mostly ignored to minimize overfitting to the leaderboard."
+The models are ensembled with mean. This is interesting, because obviously one of the models will perform better than others using just one set of data (It is the Xboost model 2, with mean CV Kappa score of 0.4724). But it does not mean it will perform better in all sets of data. This is the problem of overfitting. The author writes: "Leaderboard score itself was mostly ignored to minimize overfitting to the leaderboard."
+
+Another serious problem to be tackled is the excess of zeros in the training dataset. This is clear in the distribution graph that is plotted in dark orange.
+
+This is tackled by the author using the "objective=reg:tweedie" parameter in his models. Tweedie regression is a generalized linear model (GLM) designed to handle zero-inflated and highly skewed data. It belongs to the Tweedie family of distributions, which can model data that has both a large number of zeros and continuous positive values—a mix between a point mass at zero and a continuous distribution.
 
 
 
