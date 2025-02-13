@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Draft Post"
+title: "Child Mind Institute competition - 1st place"
 date: 2025-02-09
 ---
 
@@ -46,6 +46,8 @@ A distribution graph of the target variable revealed there are too many zeroes.
 A LassoCV method is used to impute values to nAn cells. The method aims to impute missing values in a dataset by training a predictive model for each feature with missing data, using other available features as predictors. If insufficient data is available to train a reliable model, it falls back on using the mean value for imputation.
 
 This approach is similar to multivariate feature imputation techniques, such as those implemented in scikit-learn’s IterativeImputer, which models each feature with missing values as a function of other features and uses that estimate for imputation.
+
+The author writes: Feature selection was done manually based on feature importance, reducing the dataset to 39 features. I wonder why 39, and not 20 or 50. The balance to strike is: having too many features makes the model overfit. Having to few makes it unsufficient. I do not know how the author found the right balance.
 
 ## The model
 
