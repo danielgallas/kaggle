@@ -17,6 +17,22 @@ The submission file will be a table with two columns: user ID and his or her sii
 
 The evaluation method is: [quadratic weighted kappa](https://www.kaggle.com/code/aroraaman/quadratic-kappa-metric-explained-in-5-simple-steps), which measures the agreement between two ratings. This metric typically varies from 0 (random agreement between raters) to 1 (complete agreement between raters).
 
+# The solution: in short
+
+There were two major sources of data:
+1. data gathered from questionaires and physical exams
+2. information from wearable devices - for just part of the children
+
+Principal Component Analysis was used to reduce the data from wearable devices into 15 features.
+
+The data was combined and many, many features were taken off from the list. They were selected through feature importance.
+
+Thresholds for what constitutes Severity Impairment were optimised.
+
+There was a problem of too many zeroes in the training data set for the target variable. The author says he tried changing weights, but ended up using Tweedie distribuition in his models (which are used in cases of zero-inflated data).
+
+Cross validation and model-ensembling of three models were used.
+
 # Step by step solution
 
 The first issue is getting all the data together. There are two sets of data. One regular set of train.csv and test.csv files. But there is a bunch of .parquet files, which is time series from a wearable device each user wore for a while. We can already see that we will have a problem of too much data - and probably too much noise.
