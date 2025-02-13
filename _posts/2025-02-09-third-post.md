@@ -17,6 +17,8 @@ The submission file will be a table with two columns: user ID and his or her sii
 
 The evaluation method is: [quadratic weighted kappa](https://www.kaggle.com/code/aroraaman/quadratic-kappa-metric-explained-in-5-simple-steps), which measures the agreement between two ratings. This metric typically varies from 0 (random agreement between raters) to 1 (complete agreement between raters).
 
+This is a very detailed [exploratory data analysis](https://www.kaggle.com/code/antoninadolgorukova/cmi-piu-features-eda).
+
 # The solution: in short
 
 There were two major sources of data:
