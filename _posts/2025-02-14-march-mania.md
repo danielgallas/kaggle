@@ -26,6 +26,21 @@ Each game has a unique ID created by concatenating the season in which the game 
 
 Your 2025 submissions will score 0.0 if you have submitted predictions in the right format. The leaderboard of this competition will be only meaningful once the 2025 tournaments begin and Kaggle rescores your predictions!
 
+The goal of this competition is to predict that probability that the smaller TeamID will win a given matchup. I therefore imagine most predictions will be under 0.5, as this indicates the probabillity of the weaker team winning in the Brier score.
+
+## Strategies
+
+I can literally drown in all these numbers. The [data tab in the competition](https://www.kaggle.com/competitions/march-machine-learning-mania-2025/data) is insane.
+
+The submission file, however, is very straightforward. All they want are predictions of games - nothing more than that.
+
+I will work my way up. I will start out with a minimal model and minimal inputs that generalize well. I will produce a train model with very few features and then work my way up, adding more features.
+
+Intuitively I believe recent results are what really matter for predicting outcomes. I will prioritise this.
+
+This [starter notebook by Paul Mooney](https://www.kaggle.com/code/paultimothymooney/simple-starter-notebook-for-march-mania-2025/notebook) is very sensible.
+
+
 ## Exploratory Data Analysis:
 
 Here
