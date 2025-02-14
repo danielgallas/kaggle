@@ -26,7 +26,7 @@ Each game has a unique ID created by concatenating the season in which the game 
 
 Your 2025 submissions will score 0.0 if you have submitted predictions in the right format. The leaderboard of this competition will be only meaningful once the 2025 tournaments begin and Kaggle rescores your predictions!
 
-The goal of this competition is to predict that probability that the smaller TeamID will win a given matchup. I therefore imagine most predictions will be under 0.5, as this indicates the probabillity of the weaker team winning in the Brier score.
+The goal of this competition is to predict that probability that the smaller TeamID will win a given matchup.
 
 ## Strategies
 
