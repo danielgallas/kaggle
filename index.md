@@ -1,14 +1,5 @@
 ---
-title: Welcome to my blog
+title: Welcome to my blog about Kaggle competitions
 ---
 
-First words out!
-
-<p>Here’s a math formula using the <code>&lt;math&gt;</code> tag:</p>
-
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msqrt>
-    <mn>9</mn>
-  </msqrt>
-</math>
-
+This blog analyses solutions in Kaggle competitions. Some analysis is based on Kaggle notebooks. Others are based on write-ups in discussion forums. And some are a diary of my own entries.
